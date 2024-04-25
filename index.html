@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animated GIF</title>
+<style>
+    
+    /* Style to change background color */
+    body {
+        background-color: rgb(236, 147, 34);
+    }
+
+
+
+
+    /* Style to center the GIF */
+    .gif-container {
+        position: absolute;
+        top: 50%;
+        left: 47.85%;
+        transform: translate(-50%, -50%);
+    }
+    /* Style to adjust the size of the GIF */
+    .gif-container img {
+        width: 110%; /* Adjust width as needed */
+        height: auto; /* Maintain aspect ratio */
+    }
+</style>
+</head>
+<body>
+    <!-- Container for the GIF -->
+    <div class="gif-container">
+        <!-- Adjust src attribute with the path to your GIF file -->
+        <img src="GIF/TBI-Logo-Animated.gif" alt="Animated GIF">
+    </div>
+
+    <!-- Optionally, add JavaScript to loop the GIF -->
+    <script>
+        // Get the GIF element
+        var gif = document.querySelector('.gif-container img');
+
+        // Reset the GIF when it ends
+        gif.addEventListener('animationiteration', function() {
+            gif.style.animation = 'none';
+            gif.offsetHeight; /* Trigger reflow */
+            gif.style.animation = 'none';
+        });
+    </script>
+</body>
+</html>
