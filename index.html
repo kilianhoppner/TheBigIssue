@@ -3,25 +3,131 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Animated Logo</title>
+<title>The Big Issue</title>
 <link rel="icon" type="text/css" href="Favicon/TBIFavicon.png">
+
+
 <style>
-    
-    /* Style to change background color */
-    body {
+   
+   /* Style to change background color */
+    html, body {
         background-color: rgb(236, 147, 34);
+        margin: 0;
+        padding-bottom:0;
+        cursor:url("Cursor/Circle.png"), auto;
+    }
+
+ @font-face {
+  font-family: 'Impact'; /* Custom font family name */
+  src: url('Typefaces/impact.ttf') format('truetype'); /* Font file path and format */
+  /* Add additional font formats if necessary */
+}
+
+
+
+
+
+
+
+    /* Style for the buttons container */
+    .button-container {
+        position: relative; /* Position the container relative to the body */
+        width: 100%; /* Take up the full width of the page */
+        margin-top: 60%;
+        text-align: center; /* Center-align content within the container */
+    }
+
+    /* Style for the large square button */
+    .large-button {
+        width: 100%; /* Set a percentage width for the buttons */
+        background-color: rgb(236, 147, 34); /* Initial background color */
+        color: rgb(40, 34, 24); /* Text color */
+        text-align: center; /* Center-align text */
+        padding: 5.2% 0; /* Add padding to the button */
+        transition: background-color 0.9s; /* Smooth transition for background color change */
+        box-sizing: border-box; /* Include padding in the width calculation */
+        border-top: 0.036em solid rgb(40, 34, 24); /* Black border line at the top */
+        border-bottom: 0.036em solid rgb(40, 34, 24); /* Black border line at the top */
+        font-family: 'Impact';
+        font-size: 6em;
+    }
+
+    /* Change button color on hover */
+    .large-button:hover {
+        background-color: rgb(206, 198, 162); /* New background color on hover */
+    }
+
+    /* Style for the second large square button */
+    .large-button2 {
+        width: 100%; /* Set a percentage width for the buttons */
+        background-color: rgb(236, 147, 34); /* Initial background color */
+        color: rgb(40, 34, 24); /* Text color */
+        text-align: center; /* Center-align text */
+        padding: 5.2% 0; /* Add padding to the button */
+        transition: background-color 0.9s; /* Smooth transition for background color change */
+        box-sizing: border-box; /* Include padding in the width calculation */
+        border-bottom: 0.036em solid rgb(40, 34, 24); /* Black border line at the top */;
+        font-family: 'Impact';
+        font-size: 6em;
+    }
+
+    /* Change button color on hover */
+    .large-button2:hover {
+        background-color: rgb(206, 198, 162); /* New background color on hover */
+    }
+
+    /* Style for the large square button */
+    .large-button3 {
+        width: 100%; /* Set a percentage width for the buttons */
+        background-color: rgb(236, 147, 34); /* Initial background color */
+        color: rgb(40, 34, 24); /* Text color */
+        text-align: center; /* Center-align text */
+        padding: 5.2% 0; /* Add padding to the button */
+        transition: background-color 0.9s; /* Smooth transition for background color change */
+        box-sizing: border-box; /* Include padding in the width calculation */
+        border-bottom: 0.036em solid rgb(40, 34, 24); /* Black border line at the top */
+        font-family: 'Impact';
+        font-size: 6em;
+    }
+
+    /* Change button color on hover */
+    .large-button3:hover {
+        background-color: rgb(206, 198, 162); /* New background color on hover */
+    }
+
+   /* Style for the large square button */
+   .large-button4 {
+        width: 100%; /* Set a percentage width for the buttons */
+        background-color: rgb(236, 147, 34); /* Initial background color */
+        color: rgb(40, 34, 24); /* Text color */
+        text-align: center; /* Center-align text */
+        padding: 5.2% 0; /* Add padding to the button */
+        transition: background-color 0.9s; /* Smooth transition for background color change */
+        box-sizing: border-box; /* Include padding in the width calculation */
+        border-bottom: 0.036em solid rgb(40, 34, 24); /* Black border line at the top */
+        font-family: 'Impact';
+        font-size: 6em;
+    }
+
+    /* Change button color on hover */
+    .large-button4:hover {
+        background-color: rgb(206, 198, 162); /* New background color on hover */
     }
 
 
 
+
+
+/* GIF */
 
     /* Style to center the GIF */
     .gif-container {
         position: absolute;
-        top: 50%;
+        top: 49%;
         left: 47.8%;
         transform: translate(-50%, -50%);
     }
+
     /* Style to adjust the size of the GIF */
     .gif-container img {
         width: 110%; /* Adjust width as needed */
@@ -29,14 +135,57 @@
     }
 </style>
 </head>
+
+
+
+
+
+
+
 <body>
+
+
+
+
     <!-- Container for the GIF -->
     <div class="gif-container">
         <!-- Adjust src attribute with the path to your GIF file -->
         <img src="GIF/TBI-Logo-Animated.gif" alt="Animated GIF">
     </div>
 
-    <!-- Optionally, add JavaScript to loop the GIF -->
+
+
+
+
+    <!-- Container for the buttons -->
+    <div class="button-container">
+        <!-- Large square button 1 -->
+        <div class="large-button">
+            ABOUT
+        </div>
+
+        <!-- Large square button 2 -->
+        <div class="large-button2">
+            PROGRAMS
+        </div>
+
+        <!-- Large square button 3 -->
+        <div class="large-button3">
+            CONTRIBUTE
+        </div>
+
+         <!-- Large square button 3 -->
+        <div class="large-button3">
+            COMMUNITY
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- JavaScript to loop the GIF -->
     <script>
         // Get the GIF element
         var gif = document.querySelector('.gif-container img');
