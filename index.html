@@ -15,18 +15,14 @@
         margin: 0;
         padding-bottom:0;
         cursor:url("Cursor/Circle.png"), auto;
+        
     }
 
  @font-face {
   font-family: 'Impact'; /* Custom font family name */
-  src: url('Typefaces/impact.ttf') format('truetype'); /* Font file path and format */
+  src: url('Typefaces/RtObligat.otf'); /* Font file path and format */
   /* Add additional font formats if necessary */
 }
-
-
-
-
-
 
 
     /* Style for the buttons container */
@@ -43,13 +39,14 @@
         background-color: rgb(236, 147, 34); /* Initial background color */
         color: rgb(40, 34, 24); /* Text color */
         text-align: center; /* Center-align text */
-        padding: 5.2% 0; /* Add padding to the button */
+        padding: 5.265% 0; /* Add padding to the button */
         transition: background-color 0.9s; /* Smooth transition for background color change */
         box-sizing: border-box; /* Include padding in the width calculation */
         border-top: 0.036em solid rgb(40, 34, 24); /* Black border line at the top */
         border-bottom: 0.036em solid rgb(40, 34, 24); /* Black border line at the top */
         font-family: 'Impact';
         font-size: 6em;
+        cursor: url('Cursor/Circle.png'), auto; /* Custom cursor */
     }
 
     /* Change button color on hover */
@@ -63,12 +60,13 @@
         background-color: rgb(236, 147, 34); /* Initial background color */
         color: rgb(40, 34, 24); /* Text color */
         text-align: center; /* Center-align text */
-        padding: 5.2% 0; /* Add padding to the button */
+        padding: 5.265% 0; /* Add padding to the button */
         transition: background-color 0.9s; /* Smooth transition for background color change */
         box-sizing: border-box; /* Include padding in the width calculation */
         border-bottom: 0.036em solid rgb(40, 34, 24); /* Black border line at the top */;
         font-family: 'Impact';
         font-size: 6em;
+        cursor: url('Cursor/Circle.png'), auto; /* Custom cursor */
     }
 
     /* Change button color on hover */
@@ -82,12 +80,13 @@
         background-color: rgb(236, 147, 34); /* Initial background color */
         color: rgb(40, 34, 24); /* Text color */
         text-align: center; /* Center-align text */
-        padding: 5.2% 0; /* Add padding to the button */
+        padding: 5.265% 0; /* Add padding to the button */
         transition: background-color 0.9s; /* Smooth transition for background color change */
         box-sizing: border-box; /* Include padding in the width calculation */
         border-bottom: 0.036em solid rgb(40, 34, 24); /* Black border line at the top */
         font-family: 'Impact';
         font-size: 6em;
+        cursor: url('Cursor/Circle.png'), auto; /* Custom cursor */
     }
 
     /* Change button color on hover */
@@ -101,12 +100,13 @@
         background-color: rgb(236, 147, 34); /* Initial background color */
         color: rgb(40, 34, 24); /* Text color */
         text-align: center; /* Center-align text */
-        padding: 5.2% 0; /* Add padding to the button */
+        padding: 5.265% 0; /* Add padding to the button */
         transition: background-color 0.9s; /* Smooth transition for background color change */
         box-sizing: border-box; /* Include padding in the width calculation */
         border-bottom: 0.036em solid rgb(40, 34, 24); /* Black border line at the top */
         font-family: 'Impact';
         font-size: 6em;
+        cursor: url('Cursor/Circle.png'), auto; /* Custom cursor */
     }
 
     /* Change button color on hover */
@@ -154,33 +154,55 @@
     </div>
 
 
+    <style>
+        /* Style for anchor tag */
+        a {
+            text-decoration: none; /* Remove underline */
+            color: inherit; /* Inherit color from parent */
+        }
+    </style>
 
 
 
     <!-- Container for the buttons -->
-    <div class="button-container">
-        <!-- Large square button 1 -->
+
+<div class="button-container">
+    
+    <!-- Large square button 1 -->
+    <a href="about.html">
         <div class="large-button">
             ABOUT
         </div>
+    </a>
+
 
         <!-- Large square button 2 -->
-        <div class="large-button2">
-            PROGRAMS
-        </div>
+        <a href="programs.html">
+            <div class="large-button2">
+                PROGRAMS
+            </div>
+        </a>
+
+
 
         <!-- Large square button 3 -->
-        <div class="large-button3">
-            CONTRIBUTE
-        </div>
-
-         <!-- Large square button 3 -->
-        <div class="large-button3">
-            COMMUNITY
-        </div>
-    </div>
+        <a href="contribute.html">
+            <div class="large-button2">
+                CONTRIBUTE
+            </div>
+        </a>
 
 
+
+        <!-- Large square button 4 -->
+        <a href="community.html">
+            <div class="large-button4">
+                COMMUNITY
+            </div>
+        </a>
+
+
+</div>
 
 
 
