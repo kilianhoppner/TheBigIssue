@@ -25,11 +25,65 @@
 }
 
 
+
+/* GIF */
+
+    /* Style to center the GIF */
+    .gif-container {
+        position: absolute;
+        top: 48%;
+        left: 46.2%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* Style to adjust the size of the GIF */
+    .gif-container img {
+        width: 113%; /* Adjust width as needed */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+
+
+
+
+/* Mission Statement */
+
+.image-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 49%;
+    margin-left:0%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.5s ease; /* Add transition effect */
+}
+
+
+.invisiblebox {
+
+position: absolute;
+top: 152.3%;
+left: 35%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+cursor: url("Cursor/Circle.png"), auto;
+width:18.5%;
+height: 10.5%;
+border: Opx solid rgb(66, 255, 141);
+z-index: 9999;
+margin: 0;
+}
+
+
+
     /* Style for the buttons container */
     .button-container {
         position: relative; /* Position the container relative to the body */
         width: 100%; /* Take up the full width of the page */
-        margin-top: 60%;
+        margin-top: 4.5%;
         text-align: center; /* Center-align content within the container */
     }
 
@@ -115,24 +169,6 @@
     }
 
 
-
-
-
-/* GIF */
-
-    /* Style to center the GIF */
-    .gif-container {
-        position: absolute;
-        top: 49%;
-        left: 46.8%;
-        transform: translate(-50%, -50%);
-    }
-
-    /* Style to adjust the size of the GIF */
-    .gif-container img {
-        width: 110%; /* Adjust width as needed */
-        height: auto; /* Maintain aspect ratio */
-    }
 </style>
 </head>
 
@@ -154,13 +190,17 @@
     </div>
 
 
-    <style>
-        /* Style for anchor tag */
-        a {
-            text-decoration: none; /* Remove underline */
-            color: inherit; /* Inherit color from parent */
-        }
-    </style>
+
+
+
+<!-- Mission Statement -->
+
+<div class="image-container">
+    <img src="Mission Statement/MissionStatement.png" id="first-image">
+    <a href="magazine.html"><div class="invisiblebox"></div></a>
+</div>
+
+
 
 
 
@@ -202,6 +242,16 @@
         </a>
 
 
+
+            
+    <style>
+        /* Style for anchor tag */
+        a {
+            text-decoration: none; /* Remove underline */
+            color: inherit; /* Inherit color from parent */
+        }
+    </style>
+
 </div>
 
 
@@ -219,5 +269,27 @@
             gif.style.animation = 'none';
         });
     </script>
+
+
+<script>
+    // Function to store scroll position in localStorage
+    window.addEventListener('beforeunload', function() {
+        localStorage.setItem('scrollPosition', window.scrollY);
+    });
+
+    // Function to restore scroll position from localStorage
+    document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(function() {
+            const scrollPosition = localStorage.getItem('scrollPosition');
+            if (scrollPosition) {
+                window.scrollTo(0, parseInt(scrollPosition));
+                localStorage.removeItem('scrollPosition'); // Clear stored position
+            }
+        }, 0); // Delay execution to next tick
+    });
+</script>
+
+
+
 </body>
 </html>
