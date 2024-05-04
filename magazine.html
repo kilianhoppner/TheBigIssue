@@ -11,7 +11,7 @@
    
    /* Style to change background color */
     html, body {
-        background-color: rgb(138, 183, 226);
+        background-color: rgb(225, 229, 77);
         margin: 0;
         padding-bottom:0;
         cursor:url("Cursor/Circle.png"), auto;
@@ -32,6 +32,16 @@
             right: 5%;
             width: 20%; /* Adjust width as needed */
             height: auto; /* Maintain aspect ratio */
+            z-index: 9999;
+    }
+
+    .magazineamy {
+        cursor: url('Cursor/Circle.png'), auto; /* Custom cursor */
+        position: fixed;
+            bottom: 8%;
+            left: 1%;
+            width: 70%; /* Adjust width as needed */
+            height: auto; /* Maintain aspect ratio */
     }
 
     </style>
@@ -44,5 +54,6 @@
 <!-- Image with link to index.html -->
 <a href="index.html">
     <img src="Assets/BackArrow.png" alt="Description of your image" class="clickable-image">
+    <img class="magazineamy"; src="LatestMagazine/AmyWinehouse.png">
 </a>
 </body>
